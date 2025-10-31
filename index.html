@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Egor Folley | ML/LLMOps & Agentic AI Solutions</title>
-  <meta name="description" content="Egor Folley — ML/LLMOps & Agentic AI Solutions. 2x founder with 9+ years building and scaling AI products end-to-end for business value." />
+  <title>Egor Folley | AI Tech Entrepreneur & Solutions Architect</title>
+  <meta name="description" content="Egor Folley | AI Tech Entrepreneur & Solutions Architect. 2x founder with 9+ years building and scaling AI products end-to-end for business value." />
   <style>
     :root {
-      --bg: #f7f8fa;
-      --card: #ffffff;
-      --ink: #1f2328;
-      --muted: #6b7280;
-      --accent: #111111;
-      --ring: rgba(17, 17, 17, 0.08);
-      --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.06);
-      --radius: 14px;
+      /* Dark theme: black background with high-contrast foreground */
+      --bg: #000000;             /* page background */
+      --card: #1e2532;           /* card / section background (dark navy) */
+      --ink: #e6eef8;            /* primary foreground (near-white) */
+      --muted: #93a3b8;          /* secondary text */
+      --accent: #7c5cff;         /* call-to-action accent */
+      --ring: rgba(255, 255, 255, 0.06); /* subtle light ring */
+      --shadow: 0 6px 18px rgba(37, 43, 67, 0.6);
+      --radius: 16px;
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
+      margin: 10px;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       color: var(--ink);
-      background: radial-gradient(1200px 600px at 50% -100px, #e9ecf3, transparent) var(--bg);
-      line-height: 1.6;
+      /* subtle radial glow on black background for depth */
+      background: radial-gradient(1200px 600px at 50% -100px, rgba(255,255,255,0.02), transparent) var(--bg);
+      line-height: 1.25;
     }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 80px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 80px; }
+  /* Add consistent vertical spacing between direct children (header, sections, grid, footer) */
+  .wrap > * + * { margin-top: 24px; }
     header {
       text-align: center;
       padding: 56px 16px 28px;
@@ -32,19 +37,19 @@
     .name { font-size: clamp(28px, 4.5vw, 42px); letter-spacing: .2px; margin: 0; }
     .tag { margin: 8px 0 0; color: var(--muted); font-size: clamp(16px, 2.4vw, 18px); }
     .contact {
-      margin-top: 18px;
+      margin-top: 28px;
       display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
     }
     .pill {
       display: inline-block; padding: 8px 12px; border-radius: 999px; background: var(--card);
-      box-shadow: var(--shadow); border: 1px solid var(--ring); text-decoration: none; color: var(--ink);
+      box-shadow: var(--shadow); border: 1px solid rgba(255,255,255,0.04); text-decoration: none; color: var(--ink);
       font-size: 14px;
     }
-    .grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+    .grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
     @media (min-width: 840px) { .grid { grid-template-columns: 1fr 1fr; } }
     section {
-      background: var(--card); border: 1px solid var(--ring); box-shadow: var(--shadow);
-      border-radius: var(--radius); padding: 22px;
+      background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow);
+      border-radius: var(--radius); padding: 25px;
     }
     h2 { margin: 0 0 8px; font-size: 18px; letter-spacing:.2px }
     .muted { color: var(--muted); }
@@ -53,48 +58,174 @@
     .role { font-weight: 600; }
     .meta { color: var(--muted); font-size: 14px; }
     .bullets { margin-top: 8px; }
-    .press a, .links a { color: var(--ink); }
+  .press a, .links a { color: var(--ink); }
     footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 28px; }
     .cta {
       display:inline-block; background: var(--accent); color:#fff; padding:12px 18px; border-radius: 10px;
-      text-decoration: none; margin-top: 16px;
+      text-decoration: none; margin-top: 16px; box-shadow: 0 6px 18px rgba(124,92,255,0.16);
     }
     .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px }
-    .chip { font-size:12px; padding:6px 10px; border-radius: 999px; background:#f0f2f5; border:1px solid #e5e7eb }
-    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  .chip { font-size:12px; padding:6px 10px; border-radius: 999px; background:#07101a; border:1px solid rgba(255,255,255,0.03); color:var(--ink); }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  /* Header avatar */
+  .avatar { display:block; width:150px; height:150px; margin: 0 auto 15px; border-radius:999px; object-fit:cover; border:2px solid rgba(255,255,255,0.06); box-shadow: 0 8px 24px rgba(2,6,23,0.6); }
+  @media (min-width: 840px) { .avatar { width:140px; height:140px; } }
+  /* Change link color to brighter blue */
+  a { color: #007bff; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
 
     <header>
+      <!-- Add an avatar image at assets/photo.jpg (replace path or URL as needed) -->
+      <img class="avatar" src="imgs/photo.jpeg" alt="Egor Folley photo" />
       <h1 class="name">EGOR FOLLEY</h1>
-      <p class="tag">ML/LLMOps & Agentic AI Solutions</p>
+      <h2 class="tag">AI Tech Entrepreneur & Solutions Architect</h2>
+      <p>2X AI & robotics founder with 9+ years building and scaling AI products for business impact.</p>
+      
       <nav class="contact" aria-label="Contact links">
-        <a class="pill" href="mailto:egor.folley@gmail.com">egor.folley@gmail.com</a>
-        <a class="pill" href="https://linkedin.com/in/egor-folley" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="pill" href="https://efolley.com" target="_blank" rel="noopener">efolley.com</a>
-        <a class="pill" href="tel:+13135801958">+1&nbsp;313&nbsp;580-1958</a>
-        <span class="pill muted">New York, US</span>
-      </nav>
-      <a class="cta" href="mailto:egor.folley@gmail.com?subject=AI%20opportunity%20with%20Egor">Let’s work together</a>
+        <a class="pill" href="mailto:egor.folley@gmail.com" aria-label="Email Egor Folley" title="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8.25v7.5A2.25 2.25 0 0 0 5.25 18h13.5A2.25 2.25 0 0 0 21 15.75v-7.5" />
+            <path d="M3 8.25L12 13.5 21 8.25" />
+          </svg>
+          <span class="sr-only">Email</span>
+        </a>
+
+        <a class="pill" href="https://linkedin.com/in/egor-folley" target="_blank" rel="noopener" aria-label="Egor Folley on LinkedIn" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5V24H0V8.5zM8.5 8.5h4.78v2.09h.07c.66-1.25 2.29-2.56 4.72-2.56 5.05 0 5.99 3.33 5.99 7.66V24h-5V16.5c0-1.78-.03-4.06-2.48-4.06-2.48 0-2.86 1.94-2.86 3.94V24h-5V8.5z" />
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+
+        <a class="pill" href="https://github.com/egorfolley" target="_blank" rel="noopener" aria-label="Egor Folley on GitHub" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.08 1.85 2.84 1.31 3.53 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.69.24 2.94.12 3.25.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/>
+          </svg>
+          <span class="sr-only">GitHub</span>
+        </a>
+      </nav></svg>
     </header>
 
-    <section aria-labelledby="summary">
-      <h2 id="summary">Summary</h2>
-      <p>
-        2× founder of AI and robotics startups with 9+ years of experience building and scaling AI products end-to-end for business value. Strong communication skills with hands-on strategy, sales, and tech-dev. Led 10+ end-to-end AI SaaS projects, from strategy/OKRs to POC, MVP, and production deployment. Raised $200K in angel funding and generated $100K+ revenue across ventures.
-      </p>
-      <div class="chips" aria-label="Focus areas">
+    <section aria-labelledby="summary" style="text-align: center; width: 100%;">
+      <h1 id="summary">Website is under reconstruction - will be available soon</h1>
+      <div class="subsections">
+
+        <div class="subsection">
+          <div class="image-container">
+        <img src="imgs/BW.png" alt="Placeholder Image 4" />
+          </div>
+          <div class="text-container">
+        <h3>Vision AI Agent | Pitch at AI Conference</h3>
+        <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener"> BuiltWorlds 2025 AI/ML Conference</a>
+          </div>
+        </div>
+        
+        <div class="subsection">
+          <div class="image-container">
+        <img src="imgs/LAWeekly.jpeg" alt="Placeholder Image 1" />
+          </div>
+          <div class="text-container">
+        <h3>Dropped Out, Shut Down, Started Over: Egor Folley’s Journey to Modalina AI</h3>
+        <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener"> LA Weekly</a>
+          </div>
+        </div>
+        
+        <div class="subsection">
+          <div class="image-container">
+        <img src="imgs/IBT.jpg" alt="Placeholder Image 2" />
+          </div>
+          <div class="text-container">
+        <h3>After Crossing Continents and Industries, Egor Folley Is Contributing to the Future of AI</h3>
+        <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener"> International Business Times</a>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="image-container">
+        <img src="imgs/DevX.jpg" alt="Placeholder Image 3" />
+          </div>
+          <div class="text-container">
+        <h3>How Modalina AI Is Empowering Business Leaders to Effortlessly Adopt AI Agents </h3>
+        <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener"> DevX</a>
+          </div>
+        </div>
+
+      </div>
+      <style>
+      .subsections {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .subsection {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .image-container {
+        flex: 0 0 25%;
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius);
+      }
+      .text-container {
+        flex: 1;
+        text-align: left;
+      }
+      </style>
+    </section>
+
+    <!-- <section aria-labelledby="summary"> -->
+      
+      <!-- <div class="chips" aria-label="Focus areas">
         <span class="chip">LLMOps</span><span class="chip">Agentic Systems</span><span class="chip">RAG</span>
         <span class="chip">MLOps</span><span class="chip">Vision AI</span><span class="chip">Azure / GCP / AWS</span>
         <span class="chip">LangChain / LangGraph</span><span class="chip">Milvus / Pinecone</span>
         <span class="chip">FastAPI / Flask</span><span class="chip">Kubernetes</span>
-      </div>
-    </section>
+      </div> -->
+    <!-- </section> -->
 
-    <section aria-labelledby="experience">
-      <h2 id="experience">Professional Experience</h2>
+    <!-- <section aria-labelledby="key-achievements">
+      <h2 id="key-achievements">Key Achievements</h2>
+      <ul>
+        <li>Founder of <a href="https://modalina.ai" target="_blank" rel="noopener"> Modalina AI</a> | Stealth</li>
+        <li>Delivered 10+ end-to-end AI consulting projects, from strategy OKRs to development:</li>
+          <ul>
+            <li>
+            <li>Raised $200,000 angel round from AAS Fund and Techstars
+            <li>Secured 8 public pitches, including AUDI C-level: Techstars Demo Day.</li>
+            <li>Developed MVP for autonomous visual navigation & data collection using NVIDIA Jetson Nano, ZED-Mini sensor, PX4 firmware, ROS, OpenSLAM.</li>
+          </ul>
+        <li>Founder of <a href="https://artial.co" target="_blank" rel="noopener"> ARTIAL</a> [RIP] | AI autonomy on the edge to help construction companies collect jobsite data fully autonomously:</li>
+          <ul>
+            <li>Secured $10,000 ARR and 11 LoIs from the EU, EMEA markets</li>
+            <li>Raised $200,000 angel round from AAS Fund and Techstars
+            <li>Secured 8 public pitches, including AUDI C-level: Techstars Demo Day.</li>
+            <li>Developed MVP for autonomous visual navigation & data collection using NVIDIA Jetson Nano, ZED-Mini sensor, PX4 firmware, ROS, OpenSLAM.</li>
+          </ul>
+        <li>Generated $100K+ in revenue in 2025 as an independent MLOps/Agentic AI consultant by delivering tailored AI solutions for SMBs, including agentic platforms that reduced time-to-value by 25%.</li>
+        <li>As Entrepreneur-in-Residence at Global Detroit, boosted team productivity by ~14 hours/week via custom AI integrations (prompts, n8n workflows, GPTs) and streamlined operations with Notion SOPs.</li>
+        <li>Secured 11 letters of intent (LoIs) from EU/EMEA markets for ARTIAL Inc., an autonomous drone data-collection startup, using Pipedrive CRM and public pitches to C-level executives (e.g., AUDI).</li>
+        <li>Mentored startup founders on strategy, sales, and storytelling, enhancing traction and investor readiness in the MI ecosystem.</li>
+        <li>Led cross-functional teams (up to 5 members) in agile environments, improving MLOps pipelines and deploying AI models (including a burn-degree classifier with ~74% accuracy) across domains like 3D classification and nanomotor visual tracking.</li>
+        <li>Presented at events such as BuiltWorld AI Conference and Techstars Demo Day, demoing vision AI agents and autonomous drone flights.</li>
+      </ul>
+      </p> -->
+      <!-- <div class="chips" aria-label="Focus areas">
+        <span class="chip">LLMOps</span><span class="chip">Agentic Systems</span><span class="chip">RAG</span>
+        <span class="chip">MLOps</span><span class="chip">Vision AI</span><span class="chip">Azure / GCP / AWS</span>
+        <span class="chip">LangChain / LangGraph</span><span class="chip">Milvus / Pinecone</span>
+        <span class="chip">FastAPI / Flask</span><span class="chip">Kubernetes</span>
+      </div> -->
+
+    <!-- <section aria-labelledby="experience">
+    </svg>  <h2 id="experience">Professional Experience</h2>
 
       <div class="bullets">
         <div>
@@ -175,19 +306,19 @@
           <li><strong>PhD (dropout), Nanotechnology</strong> — Universitat Pompeu Fabra & IBEC <span class="meta">| Sep 2021 – Jan 2022</span></li>
           <li><strong>BSc, Mechatronics & Robotics</strong> — Russian Technological University (MIREA) <span class="meta">| Sep 2016 – Jul 2020</span></li>
         </ul>
-      </section>
+      </section> -->
 
-      <section class="press" aria-labelledby="press">
+      <!-- <section class="press" aria-labelledby="press">
         <h2 id="press">Press & Media</h2>
         <ul>
           <li>“Dropped Out, Shut Down, Started Over: Egor Folley’s Journey to Modalina AI” — LA Weekly <a href="#" target="_blank" rel="noopener">[link]</a></li>
           <li>“After Crossing Continents and Industries, Egor Folley Is Contributing to the Future of AI” — International Business Times <a href="#" target="_blank" rel="noopener">[link]</a></li>
           <li>“How Modalina AI Is Empowering Business Leaders to Effortlessly Adopt AI Agents” — Dev X <a href="#" target="_blank" rel="noopener">[link]</a></li>
         </ul>
-      </section>
+      </section> -->
     </div>
 
-    <section aria-labelledby="links">
+    <!-- <section aria-labelledby="links">
       <h2 id="links">Key Links</h2>
       <p class="links">
         <a href="mailto:egor.folley@gmail.com">Email</a> ·
@@ -195,10 +326,10 @@
         <a href="https://efolley.com" target="_blank" rel="noopener">Website</a> ·
         <a href="tel:+13135801958">Call</a>
       </p>
-    </section>
+    </section> -->
 
     <footer>
-      © <span id="y"></span> Egor Folley — Built with GitHub Pages
+      © <span id="y"></span> Egor Folley — Personal Website
     </footer>
   </div>
 
