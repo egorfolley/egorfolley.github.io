@@ -141,7 +141,7 @@
     }
   }
   /* Change hyperlinks to accent color for consistency */
-  a { color: var(--accent); font-weight: bold; }
+  a { color:  #2a83ff; font-weight: bold; }
   .testimonials {
     display: grid;
     gap: 20px;
@@ -181,6 +181,13 @@
     text-align: left;
     color: var(--muted);
   }
+  .project-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+    @media (min-width: 840px) { .project-grid { grid-template-columns: 1fr 1fr; } }
+  .project-card {
+    background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow);
+    border-radius: var(--radius); padding: 20px;
+  }
+  .project-card h3 { color: var(--accent); margin-bottom: 10px; }
   </style>
 </head>
 
@@ -193,8 +200,7 @@
         
         <div class="header-text">
           <h1 class="name">EGOR FOLLEY</h1>
-          <h2 class="tag">Helping businesses solve their problems with AI & technology</h2>
-          <p class="lead">2X founder | ML/LLMOps & Agentic AI | EIR | Techstars Alum</p>
+          <h2 class="tag">2X founder | ML/LLMOps & Agentic AI | EIR | Techstars Alum</h2>
           
           <nav class="contact" aria-label="Contact links">
             <a class="pill" href="https://linkedin.com/in/egor-folley" target="_blank" rel="noopener" aria-label="Egor Folley on LinkedIn" title="LinkedIn">
@@ -231,75 +237,139 @@
 
     <section aria-labelledby="value" style="text-align: left; width: 100%;">
       <h2 id="value">About</h2>
-      <p class="lead">
+      <p class="lead"> <strong>Helping businesses solve their problems with AI & technology. </strong><br><br>
         9+ years of experience in building and scaling end-to-end AI & robotics products for business value. 
         Strong <strong style="color: var(--accent);">communication skills</strong> with hands-on <strong style="color: var(--accent);">strategy, sales, and tech development</strong>. Currently helping B2B SMBs with AI adoption and looking for new opportunities.
       </p>
       <h2>Past life</h2>
       <ul>
-        <li><strong>Founder of Stealth AI </strong> | Iterated over 8 ideas with $12,000 MRR</li>
+        <li><strong>Founder of Stealth AI </strong> | Bootstrapped with 3 clients and $12,000 MRR</li>
         <li><strong>Entrepreneur-in-Residence </strong> | Helped MI students-founders with storytelling and pitching, while providing guidance on AI for productivity boost</li>
         <li><strong>Founder of ARTIAL </strong> | AI-edge software for fully autonomous drone flights
           <ul>
-            <li>$10k from pilot projects and raised $200k angel round</li>
-            <li>Techstars Alum - Berlin x AUDI 23' program: <a href="https://youtu.be/ux8aU6BK8IQ">Demo day pitch</a></li>
-            <li>Assembled a prototype solo for testing in my apartment: <a href="https://youtu.be/OXOSlaauBg0">Indoor flights</a></li>
+            <li>$10k from pilot projects and raised $200k angel round
+            <li>Techstars Alum - Berlin x AUDI 23' program
+            <li>Assembled a prototype solo for testing in my apartment
           </ul>
         </li>
-        <li><strong>PhD in AI for nano-bio-robotics</strong> | dropped out from a program in  <a href="https://ibecbarcelona.eu/nanodevices/"> IBEC</a> to launch my first startup at 24</li>
+        <li><strong>PhD in AI for nano-bio-robotics</strong> | Dropped out from a program in  <a href="https://ibecbarcelona.eu/nanodevices/" target="_blank" rel="noopener"> IBEC</a> to launch my first startup when I was 24</li>
+        <li><strong>BSc in intelligent robotics</strong> | Top 5 students</li>
       </ul>
     </section>
 
     <section aria-labelledby="value" style="text-align: left; width: 100%;">
-      <h2 id="value">Projects</h2>
-      <p class="lead">
-        Work in progress...
-      </p>
+      <h2 id="value">Tech projects</h2>
+      <p> This section is work in progress...</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>All-in-One Agentic Platform</h3>
+          <p>Helped ConTech managers reduce TTV by ~25% for tech adoption. 
+            <br><strong>TechStack:</strong> LangChain, LangGraph, RAG using Milvus, and AzureID.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Vision AI Agent for Jobsite Safety</h3>
+          <p>Saving ~12h for safety supervisors using vision AI. <a href="https://youtu.be/3Mo-gH-o2K8" target="_blank" rel="noopener">Pitch on BuiltWorlds AI conference</a>
+                <br><strong>TechStack:</strong> Vertex AI, ViT HuggingFace, GCP, FastAPI, Tailwind.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>AI Copilot for Data Retrieval</h3>
+          <p>Reduced cross-team data access from hours to minutes. 
+            <br><strong>TechStack:</strong> LangChain, Pinecone, FastAPI.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Desktop app for Medical Imaging</h3>
+          <p>CNN from scratch with 74% accuracy for burn degree classification. 
+            <br><strong>TechStack:</strong> PyTorch, MonAI, Streamlit, NoSQL.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="value" style="text-align: left; width: 100%;">
+      <h2 id="value">Featured</h2>
+      <div style="display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); justify-items: center;">
+        <div>
+          <p>SmartCityExpo Pitch 2023</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/yHaJmzMtLmY" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        </div>
+
+        <div>
+          <p>AI drone tests inside apartment - Demo 2023</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/OXOSlaauBg0" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        </div>
+
+        <div>
+          <p>Presentation for AUDI 2023</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/KjZqk7r23HA" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        </div>
+
+        <div>
+          <p>Techstars Berlin Demo Day 2023</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/ux8aU6BK8IQ" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        </div>
+
+        <div>
+          <p>Barcelona WorldCongress Pitch 2022</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/GQBNHYYk1l8" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        </div>
+
+      </div>
     </section>
 
     <section aria-labelledby="press">
-      <h2 id="press">Featured Recognition</h2>
+      <h2 id="press">Recognition</h2>
       <div class="subsections">
 
-        <div class="subsection">
-          <div class="image-container">
+      <div class="subsection">
+        <div class="image-container">
+      <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener">
         <img src="imgs/BW.png" alt="BuiltWorlds AI Conference" />
-          </div>
-          <div class="text-container">
-        <h3>ModalinaAI | Vision AI Agent for Construction Jobsite Data</h3>
-        <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener">BuiltWorlds 2025 AI/ML Conference</a>
-          </div>
+      </a>
         </div>
-        
-        <div class="subsection">
-          <div class="image-container">
+        <div class="text-container">
+      <h3>ModalinaAI | Vision AI Agent for Construction Jobsite Data</h3>
+      <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener">BuiltWorlds 2025 AI/ML Conference</a>
+        </div>
+      </div>
+      
+      <div class="subsection">
+        <div class="image-container">
+      <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener">
         <img src="imgs/LAWeekly.jpeg" alt="LA Weekly Article" />
-          </div>
-          <div class="text-container">
-        <h3>Dropped Out, Shut Down, Started Over: Egor Folley’s Journey</h3>
-        <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener">LA Weekly</a>
-          </div>
+      </a>
         </div>
-        
-        <div class="subsection">
-          <div class="image-container">
+        <div class="text-container">
+      <h3>Dropped Out, Shut Down, Started Over: Egor Folley’s Journey</h3>
+      <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener">LA Weekly</a>
+        </div>
+      </div>
+      
+      <div class="subsection">
+        <div class="image-container">
+      <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener">
         <img src="imgs/IBT.jpg" alt="International Business Times Article" />
-          </div>
-          <div class="text-container">
-        <h3>After Crossing Continents and Industries, Egor Folley Is Contributing to the Future of AI</h3>
-        <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener">International Business Times</a>
-          </div>
+      </a>
         </div>
+        <div class="text-container">
+      <h3>After Crossing Continents and Industries, Egor Folley Is Contributing to the Future of AI</h3>
+      <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener">International Business Times</a>
+        </div>
+      </div>
 
-        <div class="subsection">
-          <div class="image-container">
-            <img src="imgs/DevX.jpg" alt="DevX Article" />
-          </div>
-          <div class="text-container">
-        <h3>How Modalina AI Is Empowering Business Leaders to Effortlessly Adopt AI Agents</h3>
-        <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener">DevX</a>
-          </div>
+      <div class="subsection">
+        <div class="image-container">
+      <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener">
+        <img src="imgs/DevX.jpg" alt="DevX Article" />
+      </a>
         </div>
+        <div class="text-container">
+      <h3>How Modalina AI Is Empowering Business Leaders to Effortlessly Adopt AI Agents</h3>
+      <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener">DevX</a>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -319,14 +389,14 @@
           <div class="rec_text">"I met Egor at Techstars, where he demonstrated a solid knowledge of AI domain expertise. Egor's technical proficiency was matched by his keen understanding of the core problems. His proactive solutions and strategic insights were invaluable, helping us navigate challenges and stay competitive. I highly recommend Egor to any team looking to leverage AI to innovate and improve their operations."</div>
         </div>
 
-        <p>Additional recommendations available upon request</p>
+        <p>All recommendations available on my <a href="https://www.linkedin.com/in/egor-folley/details/recommendations" target="_blank" rel="noopener">LinkedIn page</a></p>
 
       </div>
     </section>
 
     <section aria-labelledby="cta" style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
       <div>
-        <h2 id="cta">Have ideas or you want AI solutions?</h2>
+        <h2 id="cta">Have ideas or need AI solutions?</h2>
         <p>Let's talk about how we can build synergies</p>
       </div>
 
