@@ -429,21 +429,25 @@
         <p style="font-size: 1.1em; color: var(--muted);">Let's talk about how we can build synergies</p>
       </div>
 
-      <form action="mailto:egor.folley@gmail.com" method="post" enctype="text/plain" style="width: 320px;">
-        <label for="name" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Name</label>
-        <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
-        <label for="message" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Message</label>
-        <textarea id="message" name="message" rows="5" required style="width:100%; padding:1px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink); resize:vertical; margin-bottom:15px;"></textarea>
-        
-        <input type="submit" value="Send Message" class="cta">
+      <form action="https://formspree.io/f/mjkjvppy" method="POST" style="width: 320px;">
+          <label for="name" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Name</label>
+          <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
+          
+          <label for="email" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Email</label>
+          <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
+          
+          <label for="message" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Message</label>
+          <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink); resize:vertical; margin-bottom:15px;"></textarea>
+          
+          <input type="submit" value="Send Message" class="cta">
       </form>
     </section>
 
     <script>
       // Add subtle hover animation
       const submitBtn = document.querySelector('input[type="submit"]');
-      submitBtn.addEventListener('mouseover', () => submitBtn.style.background = '#2ea043');
-      submitBtn.addEventListener('mouseout', () => submitBtn.style.background = '#238636');
+      submitBtn.addEventListener('mouseover', () => submitBtn.style.background = '#00d4ff');
+      submitBtn.addEventListener('mouseout', () => submitBtn.style.background = '#2af8ff');
     </script>
 
     
