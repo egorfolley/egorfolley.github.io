@@ -414,14 +414,38 @@
       </div>
     </section>
 
-    <section aria-labelledby="cta" style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <!-- <section aria-labelledby="cta" style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
       <div>
         <h2 id="cta">Have ideas or need AI solutions?</h2>
         <p>Let's talk about how we can build synergies</p>
       </div>
 
       <a href="mailto:egor.folley@gmail.com" class="cta">Send a Message</a>
+    </section> -->
+
+    <section aria-labelledby="cta" style="background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow); border-radius: var(--radius); padding: 25px; display: flex; align-items: top; justify-content: center; flex-wrap: wrap; gap: 20px;">
+      <div style="max-width: 350px;">
+        <h2 id="cta" style="font-size: 2em; margin-bottom: 0.4em; color: var(--ink);">Have ideas or need AI solutions?</h2>
+        <p style="font-size: 1.1em; color: var(--muted);">Let's talk about how we can build synergies</p>
+      </div>
+
+      <form action="mailto:egor.folley@gmail.com" method="post" enctype="text/plain" style="width: 320px;">
+        <label for="name" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Name</label>
+        <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
+        <label for="message" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Message</label>
+        <textarea id="message" name="message" rows="5" required style="width:100%; padding:1px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink); resize:vertical; margin-bottom:15px;"></textarea>
+        
+        <input type="submit" value="Send Message" class="cta">
+      </form>
     </section>
+
+    <script>
+      // Add subtle hover animation
+      const submitBtn = document.querySelector('input[type="submit"]');
+      submitBtn.addEventListener('mouseover', () => submitBtn.style.background = '#2ea043');
+      submitBtn.addEventListener('mouseout', () => submitBtn.style.background = '#238636');
+    </script>
+
     
     <footer style="text-align: center;">
       © <span id="y"></span> Egor Folley — Building AI | Helping Businesses with AI
