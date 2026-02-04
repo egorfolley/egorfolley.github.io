@@ -5,35 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
-  <title>Egor Folley | AI Solutions</title>
-  <meta name="description" content="Egor Folley | AI Solutions. Providing end-to-end AI support with strategy, communications, sales, and tech building for transformative business outcomes in NYC." />
-  <meta name="keywords" content="Egor Folley | AI solutions, AI consultant, solutions architect, agentic AI, MLOps, LLMOps, business strategy, forward deployed engineer" />
+  <title>Egor Folley | AI Solutions for B2B in NYC</title>
+  <meta name="description" content="I help companies solve their problems by deploying AI into daily workflows in 4-8 weeks — without disrupting existing systems or requiring an AI team." />
+  <meta name="keywords" content="AI consultant NYC, B2B SaaS AI, AI deployment, RAG implementation, AI agents, enterprise AI, AI engineer, AI solutions" />
 
-  <!-- Social preview meta tags (add these) -->
+  <!-- Social preview meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Egor Folley | AI Solutions" />
-  <meta property="og:description" content="Helping businesses adopt AI — strategy, B2B sales, and product development in NYC" />
+  <meta property="og:title" content="Egor Folley | AI Deployment for B2B SaaS" />
+  <meta property="og:description" content="Fast AI deployment for NYC B2B SaaS companies — 6-8 week timelines, no agency bloat" />
   <meta property="og:url" content="https://egorfolley.github.io/" />
   <meta property="og:image" content="https://egorfolley.github.io/imgs/preview.png" />
-  <meta property="og:image:secure_url" content="https://egorfolley.github.io/imgs/preview.png" />
-  <meta property="og:image:alt" content="Egor Folley — AI Solutions" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Egor Folley | AI Solutions" />
-  <meta name="twitter:description" content="Helping businesses adopt AI — strategy, B2B sales, and product development in NYC." />
+  <meta name="twitter:title" content="Egor Folley | AI Deployment for B2B SaaS" />
+  <meta name="twitter:description" content="Fast AI deployment for NYC B2B SaaS companies — 6-8 week timelines, no agency bloat" />
   <meta name="twitter:image" content="https://egorfolley.github.io/imgs/preview.png" />
 
   <style>
     :root {
-      /* Dark theme: black background with high-contrast foreground */
-      --bg: #000000;             /* page background */
-      --card: #1e222a;           /* card / section background (dark navy) */
-      --ink: #d8e9ff;            /* primary foreground (near-white) */
-      --muted: #a2ccfe;          /* secondary text */
-      --accent: #2af8ff;         /* call-to-action accent */
-      --ring: rgba(255, 255, 255, 0.06); /* subtle light ring */
+      --bg: #000000;
+      --card: #1e222a;
+      --ink: #d8e9ff;
+      --muted: #a2ccfe;
+      --accent: #2af8ff;
+      --ring: rgba(255, 255, 255, 0.06);
       --shadow: 0 6px 18px rgba(37, 43, 67, 0.6);
       --radius: 16px;
     }
@@ -42,13 +37,13 @@
       margin: 10px;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       color: var(--ink);
-      /* subtle radial glow on black background for depth */
       background: radial-gradient(1200px 600px at 50% -100px, rgba(255,255,255,0.02), transparent) var(--bg);
-      line-height: 1.25;
+      line-height: 1.5;
     }
-  .wrap { max-width: 1000px; margin: 0 auto; padding: 28px 20px 80px; }
-  /* Add consistent vertical spacing between direct children (header, sections, grid, footer) */
-  .wrap > * + * { margin-top: 24px; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 28px 20px 80px; }
+    .wrap > * + * { margin-top: 24px; }
+    
+    /* HEADER */
     header {
       text-align: center;
       padding: 56px 16px 28px;
@@ -72,11 +67,49 @@
         text-align: left;
       }
     }
-    .name { font-size: clamp(28px, 4.5vw, 42px); letter-spacing: .2px; margin: 0; }
-    .tag { margin: 8px 0 0; color: var(--muted); font-size: clamp(16px, 2.4vw, 18px); }
+    .avatar { 
+      display:block; 
+      width:225px; 
+      height:225px; 
+      margin: 0 auto 25px; 
+      border-radius:999px; 
+      object-fit:cover; 
+      border:1px solid rgba(255,255,255,0.06); 
+      box-shadow: 0 8px 24px rgba(2,6,23,0.6); 
+    }
+    .name { 
+      font-size: clamp(28px, 4.5vw, 42px); 
+      letter-spacing: .2px; 
+      margin: 0; 
+    }
+    .role-title {
+      font-size: clamp(18px, 2.8vw, 22px);
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .tag { 
+      margin: 16px 0 0; 
+      color: var(--muted); 
+      font-size: clamp(16px, 2.4vw, 18px); 
+      line-height: 1.6;
+    }
+    .location-badge {
+      display: inline-block;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-top: 12px;
+      color: var(--accent);
+    }
     .contact {
       margin-top: 28px;
-      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 10px; 
+      justify-content: center;
     }
     @media (min-width: 840px) {
       .contact {
@@ -84,129 +117,340 @@
       }
     }
     .pill {
-      display: inline-block; padding: 8px 12px; border-radius: 999px; background: var(--card);
-      box-shadow: var(--shadow); border: 1px solid rgba(255,255,255,0.04); text-decoration: none; color: var(--ink);
+      display: inline-block; 
+      padding: 8px 12px; 
+      border-radius: 999px; 
+      background: var(--card);
+      box-shadow: var(--shadow); 
+      border: 1px solid rgba(255,255,255,0.04); 
+      text-decoration: none; 
+      color: var(--ink);
       font-size: 14px;
+      transition: all 0.2s;
     }
-    .grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
-    @media (min-width: 840px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .pill:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
     section {
-      background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow);
-      border-radius: var(--radius); padding: 25px;
+      background: var(--card); 
+      border: 1px solid rgba(255,255,255,0.03); 
+      box-shadow: var(--shadow);
+      border-radius: var(--radius); 
+      padding: 32px;
     }
-    h2 { margin: 0 0 8px; font-size: 20px; letter-spacing:.2px; font-weight: 700; }
+    h2 { 
+      margin: 0 0 20px; 
+      font-size: 28px; 
+      letter-spacing:.2px; 
+      font-weight: 700; 
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 20px;
+      margin: 24px 0 12px;
+      font-weight: 600;
+    }
     .muted { color: var(--muted); }
-    ul { padding-left: 18px; margin: 10px 0 0; }
-    li { margin: 6px 0; font-size: 16px; }
-    .role { font-weight: 600; }
-    .meta { color: var(--muted); font-size: 14px; }
-    .bullets { margin-top: 8px; }
-  .press a, .links a { color: var(--ink); }
-    footer { text-align: left; color: var(--muted); font-size: 14px; margin-top: 28px; }
-    .cta {
-      display:inline-block; background: var(--accent); color:#fff; padding:12px 18px; border-radius: 10px;
-      text-decoration: none; margin-top: 16px; box-shadow: 0 6px 18px rgba(124,92,255,0.16);
+    ul { padding-left: 20px; margin: 16px 0; }
+    li { margin: 10px 0; font-size: 16px; line-height: 1.6; }
+    .lead {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 24px;
     }
-    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px }
-  .chip { font-size:12px; padding:6px 10px; border-radius: 999px; background:#07101a; border:1px solid rgba(255,255,255,0.03); color:var(--ink); }
-  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-  /* Header avatar */
-  .avatar { display:block; width:225px; height:225px; margin: 0 auto 25px; border-radius:999px; object-fit:cover; border:1px solid rgba(255,255,255,0.06); box-shadow: 0 8px 24px rgba(2,6,23,0.6); }
-  @media (min-width: 840px)   {
-    .avatar { width:225px; height:225px; }
-    .subsections {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+
+    /* VALUE PROPS */
+    .value-props {
+      display: grid;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    @media (min-width: 840px) {
+      .value-props {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .subsection {
-        display: flex;
-        gap: 20px;
-        align-items: top;
+    }
+    .value-card {
+      background: rgba(42, 248, 255, 0.03);
+      border: 1px solid rgba(42, 248, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .value-card h4 {
+      color: var(--accent);
+      font-size: 16px;
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+    .value-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* SERVICES SECTION */
+    .services-grid {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    @media (min-width: 840px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
       }
-      .image-container {
-        flex: 0 0 40%;
+    }
+    .service-card {
+      background: rgba(42, 248, 255, 0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 24px;
+      border-radius: 12px;
+    }
+    .service-card h3 {
+      color: var(--accent);
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+    .service-price {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 12px 0;
+    }
+    .service-timeline {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    /* CASE STUDIES */
+    .case-studies {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .case-study {
+      background: rgba(42, 248, 255, 0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 28px;
+      border-radius: 12px;
+    }
+    .case-studies {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    @media (min-width: 600px) {
+      .case-studies {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .image-container img {
-        width: 100%;
-        height: auto;
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
+    }
+    @media (min-width: 1100px) {
+      .case-studies {
+        grid-template-columns: repeat(4, 1fr);
       }
-      .text-container {
-        flex: 1;
-        text-align: left;
+    }
+    .case-tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      background: rgba(42, 248, 255, 0.1);
+      border-radius: 999px;
+      color: var(--accent);
+    }
+    .case-section {
+      margin: 16px 0;
+    }
+    .case-section h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+    .case-section p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .case-result {
+      background: rgba(42, 248, 255, 0.05);
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent);
+      margin-top: 16px;
+    }
+    .case-result strong {
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      display: grid;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    @media (min-width: 840px) {
+      .testimonials {
+        grid-template-columns: 1fr 1fr;
       }
-      .value-prop { font-size: 18px; font-weight: 500; margin-top: 12px; }
-      .highlight { color: #00f7ff; font-weight: 600; }
-  }
-  /* Mobile styles for press section */
-  @media (max-width: 839px) {
-    .subsection {
+    }
+    .testimonial {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      align-items: center;
+      text-align: center;
+      background: rgba(42, 248, 255, 0.02);
+      border: 1px solid rgba(255,255,255,0.03);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 24px;
     }
-    .image-container img {
-      width: 100%;
-      height: auto;
+    .circle-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(42, 248, 255, 0.3);
+      margin-bottom: 16px;
+    }
+    .rec_name {
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: var(--ink);
+    }
+    .rec_text {
+      font-size: 14px;
+      text-align: left;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* FEATURED */
+    .featured-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-top: 24px;
+    }
+    .featured-item p {
+      margin: 0 0 12px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .featured-item iframe {
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      width: 100%;
     }
-    .text-container {
-      text-align: left;
-    }
-  }
-  /* Change hyperlinks to accent color for consistency */
-  a { color:  #2a83ff; font-weight: bold; }
-  .testimonials {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-  }
-  @media (min-width: 840px) {
-    .testimonials {
-    grid-template-columns: 1fr 1fr;
-    }
-  }
-  .testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: var(--card);
-    border: 1px solid rgba(255,255,255,0.03);
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    padding: 20px;
-  }
-  .circle-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid rgba(255,255,255,0.06);
-    box-shadow: 0 8px 24px rgba(2,6,23,0.6);
-  }
-  .rec_name {
-    font-weight: 600;
-    margin-bottom: 8px;
-    font-size: 18px;
-  }
-  .rec_text {
-    font-size: 15px;
-    text-align: left;
-    color: var(--muted);
-  }
-  .project-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
-    @media (min-width: 840px) { .project-grid { grid-template-columns: 1fr 1fr; } }
-  .project-card {
-    background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow);
-    border-radius: var(--radius); padding: 20px;
-  }
-  .project-card h3 { color: var(--accent); margin-bottom: 10px; }
-  </style>
 
+    /* CONTACT FORM */
+    .contact-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      background: rgba(0,0,0,0.3);
+      color: var(--ink);
+      font-size: 14px;
+      font-family: inherit;
+    }
+    .form-group select {
+      cursor: pointer;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(42, 248, 255, 0.3);
+    }
+    .cta:hover {
+      background: #00d4ff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(42, 248, 255, 0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    a { 
+      color: #2a83ff; 
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .sr-only { 
+      position:absolute; 
+      width:1px; 
+      height:1px; 
+      padding:0; 
+      margin:-1px; 
+      overflow:hidden; 
+      clip:rect(0,0,0,0); 
+      white-space:nowrap; 
+      border:0; 
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
 </head>
 
 <body>
@@ -214,16 +458,15 @@
     
     <!-- HEADER -->
     <header>
-      <!-- HERO -->
       <div class="header-flex">
         <img class="avatar" src="imgs/photo.jpeg" alt="Egor Folley photo" />
 
         <div class="header-text">
           <h1 class="name">EGOR FOLLEY</h1>
-          <div class="role-title">AI Solutions Strategy, Architecture, and Engineering</div>
+          <div class="role-title">AI Solutions and Deployment</div>
           
           <p class="tag">
-            I design, build, and ship AI for B2B - from problem discovery to production
+            I help companies deploy AI into daily workflows in <strong>2 weeks</strong> — without disrupting existing systems or requiring an AI team.
           </p>
 
           <nav class="contact" aria-label="Social links">
@@ -252,287 +495,223 @@
       </div>
     </header>
 
-    <!-- ABOUT  -->
-    <!--  -->
-    <section aria-labelledby="value" style="text-align: left; width: 100%;">
-      <h2 id="projects-heading">About</h2>
+    <!-- ABOUT / BACKGROUND -->
+    <section>
+      <h2>Background</h2>
       <p class="lead">
-        <strong style="color: var(--accent);">5+ years of experience</strong> building and deploying AI/ML systems end-to-end, working directly with clients.
-        Delivered <strong style="color: var(--accent);">12 full-cycle consulting projects:</strong> customer discovery, architecture, and technical implementation.
-        <strong style="color: var(--accent);">Solo-founded 2 AI startups</strong>, ensuring GTM for problem-market fit, customer acquisition/sales, and product deployment.
+        <strong class="highlight">6+ years</strong> deploying AI/ML systems end-to-end. 
+        <strong class="highlight">12 full-cycle consulting projects</strong> from customer discovery to technical implementation.
+        <strong class="highlight">2 AI startups founded</strong>.
       </p>
-          
-      <h3>Trajectory</h3>
-        <ul>
-          <li>
-            <strong style="color: var(--accent);">AI Consultant - Solutions & Engineering</strong> |
-            Generated <strong>~$100K+ in consulting revenue</strong> delivering AI projects
-          </li>
 
-          <li>
-            <strong style="color: var(--accent);">Founder (Stealth AI startup)</strong> |
-            Bootstrapped to help Engineering & Construction companies solve the problem with <strong>95% of data goes unused</strong>: 12 early adopters and pitch at <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a">AI conference</a>. A part of NVIDIA Inception program.
-          </li>
-          
-          <li>
-            <strong style="color: var(--accent);">Entrepreneur-in-Residence</strong> |
-            Mentored <strong>4 founders</strong> on storytelling, customer development, and sales
-          </li>
-          
-          <li>
-            <strong style="color: var(--accent);">Founder of ARTIAL</strong> |
-            Built edge AI software for fully autonomous drone flights, secured <strong>$10K</strong> in pilot projects,
-            and raised a <strong>$200K angel round</strong>. Techstars Berlin x AUDI alum.
-          </li>
-          
-          <li>
-            <strong style="color: var(--accent);">PhD in AI for nano-bio-robotics</strong> |
-            Dropped out from <a href="https://ibecbarcelona.eu/nanodevices/" target="_blank" rel="noopener">IBEC</a> to launch my 1st startup
-          </li>
-          
-          <li>
-            <strong style="color: var(--accent);">BSc in Mechatronics & Robotics</strong> —
-            Top 5 in class, 3.9 GPA.
-          </li>
-        </ul>
-    </section>
+      <div class="value-props">
+        <div class="value-card">
+          <h4>🚀 Startup Speed - Enterprise Quality</h4>
+          <p>As a 2X AI founder - I know what fast execution looks like.</p>
+        </div>
 
-    <!--  -->
-    <!-- CASE STUDIES / PROJECTS -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="section-inline-header">
-        <h2 id="projects-heading">Case studies</h2>
-        <small>Links available upon request</small>
+        <div class="value-card">
+          <h4>🔧 Full-Stack Ownership</h4>
+          <p>Delivered 12 end-to-end projects - discovery, architecture, implementation, handoff.</p>
+        </div>
       </div>
 
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Vision AI Agent for Jobsite Safety</h3>
-          
-          <p class="project-impact">
-            <strong>Saved ~12 hours/week</strong> for safety supervisors by automating visual inspection and incident triage on jobsites.
-          </p>
-          
-          <p class="muted" style="font-size:12px;">
-            Featured at the BuiltWorlds AI Conference (2025) - <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a">Link</a>
-          </p>
+      </ul>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section>
+      <h2>Case Studies</h2>
+
+      <div class="case-studies">
+        <!-- Case Study 1 -->
+        <div class="case-study">
+          <h3 style="color: cyan;">Agentic RAG Copilot for Cross-Team Data Retrieval</h3>
+
+          <div class="case-section">
+            <p>
+              Reduced cross-team data retrieval time by ~82% by unifying search across documents, databases, and internal tools.
+            </p>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>All-in-One Agentic Platform for Managers</h3>
-          <p class="project-impact">
-            <strong>Reduced time-to-value by ~25%</strong> for managers adopting new technology using a multi-agent platform for documentation, project data, and tools.
-          </p>
+        <!-- Case Study 2 -->
+        <div class="case-study">
+          <h3 style="color: cyan;">All-in-One Agentic Platform for Managers</h3>
+
+          <div class="case-section">
+            <p>
+              Reduced time-to-value by ~25% for managers adopting new technology using a multi-agent platform for documentation, project data, and tools.            </p>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Agentic RAG Copilot for Cross-Team Data Retrieval</h3>
-          <p class="project-impact">
-            Reduced cross-team data retrieval time <strong>by ~82%</strong> by unifying search across documents, databases, and internal tools.
-          </p>
+        <!-- Case Study 3 -->
+        <div class="case-study">
+          <h3 style="color: cyan;">Vision AI Agent for Jobsite Safety</h3>
+
+          <div class="case-section">
+            <p>
+              Saved ~12 hours/week for safety supervisors by automating visual inspection and incident triage on jobsites. </p>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Desktop Vision AI for Medical Imaging</h3>
-          <p class="project-impact">
-            Delivered a custom CNN model reaching <strong>74% accuracy</strong> for burn degree classification.
-          </p>
+        <!-- Case Study 4 -->
+        <div class="case-study">
+          <h3 style="color: cyan;">Desktop Vision AI for Medical Imaging</h3>
+
+          <div class="case-section">
+            <p>
+              Delivered a custom CNN model reaching 74% accuracy for burn degree classification. </p>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End of TECH PROJECTS -->
 
-    <!--  FEATURED -->
-    <section aria-labelledby="value" style="text-align: left; width: 100%;">
-      <h2 id="value">Featured</h2>
-      <div style="display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); justify-items: center;">
-        <div>
-          <p>BuiltWorlds AI conference Pitch 2025</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/3Mo-gH-o2K8" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+    <!-- FEATURED VIDEOS -->
+    <section>
+      <h2>Featured</h2>
+      <div class="featured-grid">
+        <div class="featured-item">
+          <p>BuiltWorlds AI Conference Pitch 2025</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/3Mo-gH-o2K8" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div>
-          <p>Autonomous flight in 600[sq ft] apartment 2024</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/OXOSlaauBg0" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
-        </div>
-        
-        <div>
-          <p>Barcelona SmartCityExpo Pitch 2023</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/yHaJmzMtLmY" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        <div class="featured-item">
+          <p>Autonomous Flight in 600 sq ft Apartment</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/OXOSlaauBg0" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div>
+        <div class="featured-item">
           <p>Techstars Berlin Demo Day 2023</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/ux8aU6BK8IQ" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/ux8aU6BK8IQ" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div>
-          <p>Presentation for AUDI 2023</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/KjZqk7r23HA" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
+        <div class="featured-item">
+          <p>Barcelona SmartCityExpo Pitch 2023</p>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/yHaJmzMtLmY" frameborder="0" allowfullscreen></iframe>
         </div>
+      </div>
 
-        <div>
-          <p>Barcelona WorldCongress Pitch 2022</p>
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/GQBNHYYk1l8" frameborder="0" allowfullscreen style="border-radius: var(--radius); box-shadow: var(--shadow);"></iframe>
-        </div>
-
+      <div style="margin-top: 32px;">
+        <h3>Press Coverage</h3>
+        <ul>
+          <li><a href="https://builtworlds.com/news/aiml-demos/" target="_blank">BuiltWorlds AI/ML Conference Demo — 2025</a></li>
+          <li><a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/" target="_blank">LA Weekly: "Dropped Out, Shut Down, Started Over: Egor Folley's Journey" — 2025</a></li>
+          <li><a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank">International Business Times: "Egor Folley Contributing to Future of AI" — 2025</a></li>
+          <li><a href="https://www.devx.com/ai/ai-tools/" target="_blank">DevX: "How Modalina AI Empowers Leaders to Adopt AI Agents" — 2025</a></li>
+        </ul>
       </div>
     </section>
-    <!-- End of FEATURED -->
 
-    <!--  PRESS / RECOGNITION -->
-    <section aria-labelledby="press">
-      <h2 id="press">Recognition</h2>
-      <div class="subsections">
-
-      <div class="subsection">
-        <div class="image-container">
-          <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener">
-        <img src="imgs/BW.png" alt="BuiltWorlds AI Conference" />
-      </a>
-      
-        </div>
-        <div class="text-container">
-          <h3>ModalinaAI | Vision AI Agent for Construction Jobsite Data</h3>
-          <a href="https://builtworlds.com/news/aiml-demos/#:~:text=context%2Drich%20responses.-,Modalina%20AI,-Modalina%20AI%2C%20a" target="_blank" rel="noopener">BuiltWorlds 2025 AI/ML Conference</a>
-        </div>
-      </div>
-      
-      <div class="subsection">
-        <div class="image-container">
-      <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener">
-        <img src="imgs/LAWeekly.jpeg" alt="LA Weekly Article" />
-      </a>
-        </div>
-        <div class="text-container">
-      <h3>Dropped Out, Shut Down, Started Over: Egor Folley’s Journey</h3>
-      <a href="https://www.laweekly.com/dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai/?utm_source=rss&utm_medium=rss&utm_campaign=dropped-out-shut-down-started-over-egor-folleys-journey-to-modalina-ai" target="_blank" rel="noopener">LA Weekly - 2025</a>
-        </div>
-      </div>
-      
-      <div class="subsection">
-        <div class="image-container">
-      <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener">
-        <img src="imgs/IBT.jpg" alt="International Business Times Article" />
-      </a>
-        </div>
-        <div class="text-container">
-      <h3>After Crossing Continents and Industries, Egor Folley Is Contributing to the Future of AI</h3>
-      <a href="https://www.ibtimes.com/after-crossing-continents-industries-egor-folley-contributing-future-ai-3776356" target="_blank" rel="noopener">International Business Times - 2025</a>
-        </div>
-      </div>
-
-      <div class="subsection">
-        <div class="image-container">
-      <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener">
-        <img src="imgs/DevX.jpg" alt="DevX Article" />
-      </a>
-        </div>
-        <div class="text-container">
-      <h3>How Modalina AI Is Empowering Business Leaders to Effortlessly Adopt AI Agents</h3>
-      <a href="https://www.devx.com/ai/ai-tools/" target="_blank" rel="noopener">DevX - 2025</a>
-        </div>
-      </div>
-      </div>
-    </section>
-    <!-- End of PRESS / RECOGNITION -->
-
-    <section aria-labelledby="recommendations">
-      <h2 id="recommendations">Recommendations</h2>
+    <!-- TESTIMONIALS -->
+    <section>
+      <h2>Client Recommendations</h2>
       
       <div class="testimonials">
         <div class="testimonial">
-            <img class="circle-icon" src="imgs/Danny.jpeg" alt="Danny Ellis photo" />
-          <div class="rec_name"><strong>Danny Ellis</strong> | Ex-CEO SkySpecs - Advisor</div>
-          <div class="rec_text">"Over 2024, I have been advising Egor on his startup journey, guiding him through the strategic decisions. Egor has a solid understanding of software development, from rapid prototype planning to rapid execution. Moreover, Egor is skilled at building customer development roadmaps, setting KPIs, and validating problem-market fit. He encompasses strategic thinking with a proactive approach to solving business challenges."</div>
+          <img class="circle-icon" src="imgs/Danny.jpeg" alt="Danny Ellis" />
+          <div class="rec_name"><strong>Danny Ellis</strong><br/>Ex-CEO SkySpecs, Advisor</div>
+          <div class="rec_text">
+            "Over 2024, I advised Egor on his startup journey. He has a solid understanding of software development, from rapid prototype planning to execution. Moreover, Egor is skilled at building customer development roadmaps, setting KPIs, and validating problem-market fit. He encompasses strategic thinking with a proactive approach to solving business challenges."
+          </div>
         </div>
         
         <div class="testimonial">
-          <img class="circle-icon" src="imgs/Boina.jpeg" alt="Boina Babu photo" />
-          <div class="rec_name"><strong>Boina Babu</strong> | AI Founder, ex-Spotify - Client</div>
-          <div class="rec_text">"I met Egor at Techstars, where he demonstrated a solid knowledge of AI domain expertise. Egor's technical proficiency was matched by his keen understanding of the core problems. His proactive solutions and strategic insights were invaluable, helping us navigate challenges and stay competitive. I highly recommend Egor to any team looking to leverage AI to innovate and improve their operations."</div>
+          <img class="circle-icon" src="imgs/Boina.jpeg" alt="Boina Babu" />
+          <div class="rec_name"><strong>Boina Babu</strong><br/>AI Founder, ex-Spotify, Client</div>
+          <div class="rec_text">
+            "I met Egor at Techstars, where he demonstrated solid AI domain expertise. His technical proficiency was matched by his keen understanding of core problems. His proactive solutions and strategic insights were invaluable, helping us navigate challenges and stay competitive. I highly recommend Egor to any team looking to leverage AI to innovate and improve operations."
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 24px; text-align: center;">
+        <a href="https://www.linkedin.com/in/egor-folley/details/recommendations" target="_blank">View all recommendations on LinkedIn →</a>
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <div class="contact-section">
+        <div class="contact-info">
+          <h2>Let's Talk</h2>
+          <p class="lead">
+            If you're drowning in manual workflows - let me help you.
+          </p>
         </div>
 
-        <p>All recommendations available on my <a href="https://www.linkedin.com/in/egor-folley/details/recommendations" target="_blank" rel="noopener">LinkedIn page</a></p>
+        <form id="contact-form" action="https://formspree.io/f/mjkjvppy" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Context</label>
+            <textarea id="message" name="message" rows="4" placeholder="Company size, current tools, budget range, etc."></textarea>
+          </div>
+
+          <button type="submit" class="cta">Send Message</button>
+        </form>
       </div>
     </section>
 
-    <!-- <section aria-labelledby="cta" style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-      <div>
-        <h2 id="cta">Have ideas or need AI solutions?</h2>
-        <p>Let's talk about how we can build synergies</p>
-      </div>
-
-      <a href="mailto:egor.folley@gmail.com" class="cta">Send a Message</a>
-    </section> -->
-
-    <section aria-labelledby="cta" style="background: var(--card); border: 1px solid rgba(255,255,255,0.03); box-shadow: var(--shadow); border-radius: var(--radius); padding: 25px; display: flex; align-items: top; justify-content: center; flex-wrap: wrap; gap: 20px;">
-      <div style="max-width: 350px;">
-        <h2 id="cta" style="font-size: 2em; margin-bottom: 0.4em; color: var(--ink);">How can I help you?</h2>
-        <p style="font-size: 1.1em; color: var(--muted);">Shoot me a message and let's talk</p>
-      </div>
-
-      <form id="contact-form" action="https://formspree.io/f/mjkjvppy" method="POST" style="width: 320px;">
-          <label for="name" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Name</label>
-          <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
-          
-          <label for="email" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Email</label>
-          <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink);">
-          
-          <label for="message" style="display:block; font-weight:600; margin-bottom:6px; color: var(--ink);">Message</label>
-          <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border:1px solid rgba(255,255,255,0.06); border-radius:6px; background:var(--card); color:var(--ink); resize:vertical; margin-bottom:15px;"></textarea>
-          
-          <input type="submit" value="Send Message" class="cta">
-      </form>
-    </section>
-
-    <script>
-      // Add subtle hover animation
-      const submitBtn = document.querySelector('input[type="submit"]');
-      submitBtn.addEventListener('mouseover', () => submitBtn.style.background = '#00d4ff');
-      submitBtn.addEventListener('mouseout', () => submitBtn.style.background = '#2af8ff');
-
-      // Handle form submission without redirect
-      const form = document.getElementById('contact-form');
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-        const submitBtn = form.querySelector('input[type="submit"]');
-        const originalText = submitBtn.value;
-        submitBtn.value = 'Sending...';
-        submitBtn.disabled = true;
-
-        try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-          if (response.ok) {
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            form.reset();
-          } else {
-            alert('Oops! There was a problem sending your message. Please try again.');
-          }
-        } catch (error) {
-          alert('Oops! There was a problem sending your message. Please try again.');
-        } finally {
-          submitBtn.value = originalText;
-          submitBtn.disabled = false;
-        }
-      });
-    </script>
-
-    <footer style="text-align: center;">
-      © <span id="y"></span> Egor Folley — AI Solutions Architect | Helping people solve problems with AI & tech
+    <footer>
+      © <span id="year"></span> Egor Folley — AI Solutions | Helping companies solve expensive problems with AI
     </footer>
   </div>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form submission handler
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          alert('Thanks for reaching out! I\'ll get back to you within 24 hours.');
+          form.reset();
+        } else {
+          alert('Oops! Something went wrong. Please email me directly at egor.folley@gmail.com');
+        }
+      } catch (error) {
+        alert('Oops! Something went wrong. Please email me directly at egor.folley@gmail.com');
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   </script>
 
 </body>
